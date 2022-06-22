@@ -1,0 +1,17 @@
+describe('vtiger',async()=>{
+    it('checkbox',async()=>{
+        await browser.url('http://localhost:8888/')
+        const username=await browser.$("//input[@name='user_name']")
+        username.setValue("admin")
+        const password=await browser.$("//input[@name='user_password']")
+        password.waitForDisplayed()
+        password.setValue("admin")
+        const submitBTN=await browser.$("//input[@id='submitButton']")
+        submitBTN.click()
+        const contactBTN=await browser.$("//a[.='Contacts']")
+        contactBTN.waitForClickable()
+        contactBTN.click()
+        const check=await browser.$("//input[@id='9']")
+        check.isElementSelected()
+    })
+})

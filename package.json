@@ -13,4 +13,9 @@
         
     },
     "scripts": {
-        "wdio": "wdio run wdio.conf.js
+        "wdio": "wdio run wdio.conf.js"
+    },
+    "dependencies": {
+        "chai": "^4.3.6"
+    }
+}

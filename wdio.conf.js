@@ -25,15 +25,26 @@ exports.config = {
         // 'test/specs/sample.js',
         // 'test/specs/lanch_browser.js',
         // 'test/specs/login_vtiger.js',
-        'test/specs/create_contactTest.js',
+        // 'test/specs/create_contactTest.js',
         // 'test/specs/create_product.js',
         // 'test/specs/create_contact_With_Organization.js',
         // 'test/specs/create_Organization.js',
         // 'test/specs/create_compaign.js',
         // 'test/specs/create_document.js',
         // 'test/specs/create_lead.js',
-        // 'test/specs/create_compaing_with_product.js'
+        // 'test/specs/create_compaing_with_product.js',
+        // 'assignment/redioBTN.js',
+        // 'assignment/scrollaction.js',
+        // 'test/assignment/checkbox.js',
+        // 'test/assignment/handlingfrems.js',
+        // 'test/assignment/frames.js',
+        // 'test/assignment/alert.js',
+        'test/assignment/disabledelement.js',
     ],
+    // suites:{
+        // smokesuite:['test/specs/create_contactTest.js','test/specs/create_lead.js'],
+        // regressionssuite:['test/specs/create_Organization.js','test/specs/create_compaing_with_product.js']
+    // },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -54,26 +65,33 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 10,
+    maxInstances: 2,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [{
+    capabilities: [
+        {
     
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
-        // 5 instances get started at a time.
-        maxInstances: 5,
-        //
-        browserName: 'firefox',
+        // // 5 instances get started at a time.
+        maxInstances: 1,
+        browserName: 'chrome',
         acceptInsecureCerts: true
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
-    }],
+
+    },
+    // {   
+        // maxInstances: 1,
+        // browserName: 'firefox',
+        // acceptInsecureCerts: true
+    // }
+],
     //
     // ===================
     // Test Configurations
@@ -114,16 +132,16 @@ exports.config = {
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
-    connectionRetryTimeout: 120000,
+    connectionRetryTimeout: 120000000,
     //
     // Default request retries count
-    connectionRetryCount: 3,
+    connectionRetryCount: 0,
     //
     // Test runner services
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['selenium-standalone'],
+    services: ['chromedriver'],
     
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -302,4 +320,5 @@ exports.config = {
     * @param {String} newSessionId session ID of the new session
     */
     // onReload: function(oldSessionId, newSessionId) {
-    //
+    // }
+}
