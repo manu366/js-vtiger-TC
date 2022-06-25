@@ -1,0 +1,86 @@
+{
+  "uid" : "cb27c75a09c251c9",
+  "name" : "create compaign",
+  "fullName" : "compaign.create compaign",
+  "historyId" : "ad3d5f05ea91e1154937e5667f561d28",
+  "time" : {
+    "start" : 1655895409690,
+    "stop" : 1655895427463,
+    "duration" : 17773
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Expect window to have url containing\n                \n                Expected: \"777777\"\n                Received: \"http://localhost:8888/\"",
+  "statusTrace" : "Error: Expect window to have url containing\n                \n                Expected: \"777777\"\n                Received: \"http://localhost:8888/\"\n                    at Context.<anonymous> (C:\\Users\\HARISH\\Desktop\\webdriver_io\\test\\specs\\create_compaign.js:8:31)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Expect window to have url containing\n                \n                Expected: \"777777\"\n                Received: \"http://localhost:8888/\"",
+    "statusTrace" : "Error: Expect window to have url containing\n                \n                Expected: \"777777\"\n                Received: \"http://localhost:8888/\"\n                    at Context.<anonymous> (C:\\Users\\HARISH\\Desktop\\webdriver_io\\test\\specs\\create_compaign.js:8:31)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3001ca427def3f33",
+      "name" : "Screenshot",
+      "source" : "3001ca427def3f33.png",
+      "type" : "image/png",
+      "size" : 111309
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "compaign"
+  }, {
+    "name" : "testClass",
+    "value" : "compaign"
+  }, {
+    "name" : "testMethod",
+    "value" : "create compaign"
+  }, {
+    "name" : "package",
+    "value" : "compaign"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-102.0.5005.115"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "cb27c75a09c251c9.json",
+  "parameterValues" : [ "chrome-102.0.5005.115" ]
+}

@@ -1,0 +1,11 @@
+[ {
+  "uid" : "cb27c75a09c251c9",
+  "name" : "create compaign",
+  "time" : {
+    "start" : 1655895409690,
+    "stop" : 1655895427463,
+    "duration" : 17773
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

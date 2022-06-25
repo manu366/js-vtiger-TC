@@ -1,0 +1,22 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "create compaign",
+    "uid" : "cb27c75a09c251c9",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1655895409690,
+      "stop" : 1655895427463,
+      "duration" : 17773
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome-102.0.5005.115" ]
+  } ]
+}

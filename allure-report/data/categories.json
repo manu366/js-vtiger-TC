@@ -1,0 +1,30 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Expect window to have url containing\n                \n                Expected: \"777777\"\n                Received: \"http://localhost:8888/\"",
+      "children" : [ {
+        "name" : "create compaign",
+        "uid" : "cb27c75a09c251c9",
+        "parentUid" : "6994487bd2ed1931b2922e0ed28ed052",
+        "status" : "failed",
+        "time" : {
+          "start" : 1655895409690,
+          "stop" : 1655895427463,
+          "duration" : 17773
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "chrome-102.0.5005.115" ]
+      } ],
+      "uid" : "6994487bd2ed1931b2922e0ed28ed052"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

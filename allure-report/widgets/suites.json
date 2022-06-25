@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "48dc2abeb51f6633c4f7f663ff011076",
+    "name" : "compaign",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

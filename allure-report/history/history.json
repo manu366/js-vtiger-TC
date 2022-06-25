@@ -1,0 +1,22 @@
+{
+  "ad3d5f05ea91e1154937e5667f561d28" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cb27c75a09c251c9",
+      "status" : "failed",
+      "statusDetails" : "Expect window to have url containing\n                \n                Expected: \"777777\"\n                Received: \"http://localhost:8888/\"",
+      "time" : {
+        "start" : 1655895409690,
+        "stop" : 1655895427463,
+        "duration" : 17773
+      }
+    } ]
+  }
+}

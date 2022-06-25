@@ -1,0 +1,26 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "compaign",
+    "children" : [ {
+      "name" : "create compaign",
+      "uid" : "cb27c75a09c251c9",
+      "parentUid" : "48dc2abeb51f6633c4f7f663ff011076",
+      "status" : "failed",
+      "time" : {
+        "start" : 1655895409690,
+        "stop" : 1655895427463,
+        "duration" : 17773
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome-102.0.5005.115" ]
+    } ],
+    "uid" : "48dc2abeb51f6633c4f7f663ff011076"
+  } ]
+}
