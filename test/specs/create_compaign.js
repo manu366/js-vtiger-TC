@@ -5,7 +5,7 @@ describe("compaign",async()=>{
         
         const username=await browser.$("//input[@name='user_name']")
         await username.waitForDisplayed()
-        await expect(browser).toHaveUrlContaining("777777")
+        await expect(browser).toHaveUrlContaining("8888")
         await username.setValue("admin")
         const password=await browser.$("//input[@name='user_password']")
         await password.waitForDisplayed()
@@ -37,7 +37,7 @@ describe("compaign",async()=>{
         
         const administretor=await browser.$("//img[@src='themes/softed/images/user.PNG']")
         await administretor.waitForDisplayed()
-        await expect(browser).toHaveUrlContaining("signout")
+        await expect(browser).toHaveUrlContaining("8888")
         await administretor.moveTo()
         const singout=await browser.$("//a[.='Sign Out']")
         await singout.waitForClickable()
