@@ -12,20 +12,25 @@ class LoginPage extends Page {
     get inputUsername () {
         return $("//input[@name='user_name']");
     }
+    async  enterUsername(user_name){
+        await (await this.inputUsername).setValue(user_name)
+    }
 
     get inputPassword () {
         return $("//input[@name='user_password']");
+    }
+    async enterPassword(pass_word){
+        await (await this.inputPassword).setValue(pass_word)
     }
 
     get btnSubmit () {
         return $("//input[@id='submitButton']");
     }
+    async loginButton(){
+        await (await this.btnSubmit).click()
+    }
 
-    /**
-     * a method to encapsule automation code to interact with the page
-     * e.g. to login using username and password
-     */
-    async login (username, password) {
+    async loginToApp (username, password) {
         await this.inputUsername.setValue(username);
         await this.inputPassword.setValue(password);
         await this.btnSubmit.click();
