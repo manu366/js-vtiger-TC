@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1656570390756' stop='1656570412162'>
+    <name>organization</name>
+    <title>organization</title>
+    <test-cases>
+        <test-case start='1656570390758' status='broken' stop='1656570412158'>
+            <name>create organization</name>
+            <title>create organization</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.66'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>browser.waitForDisplayed is not a function</message>
+                <stack-trace>TypeError: browser.waitForDisplayed is not a function
+                    at Context.&lt;anonymous> (C:\Users\user\Desktop\webdriverio\test\specs\create_Organization.js:41:23)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

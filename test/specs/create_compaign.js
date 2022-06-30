@@ -1,4 +1,3 @@
-const page=require('../pageobjects/page')
 const loginPage=require('../pageobjects/login.page')
 const homepage=require('../pageobjects/Homepage')
 const campaignpage=require('../pageobjects/create_campaign_page')

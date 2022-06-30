@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "devDependencies": {
-        "@wdio/allure-reporter": "^7.0.0",
+        "@wdio/allure-reporter": "^7.20.3",
         "@wdio/cli": "^7.20.2",
         "@wdio/local-runner": "^7.20.2",
         "@wdio/mocha-framework": "^7.20.3",
@@ -13,9 +13,18 @@
         "wdio-chromedriver-service": "^7.3.2"
     },
     "scripts": {
-        "wdio": "wdio run wdio.conf.js"
+        "wdio": "wdio run wdio.conf.js",
+        "lead":"npx wdio run ./wdio.conf.js --spec  test/specs/create_lead.js",
+        "contact":"npx wdio run ./wdio.conf.js --spec test/specs/create_contactTest.js",
+        "contactwithorganization":"npx wdio run ./wdio.conf.js --spec test/specs/create_contact_With_Organization.js",
+        "document":"npx wdio run ./wdio.conf.js --spec test/specs/create_document.js",
+        "product":"npx wdio run ./wdio.conf.js --spec test/specs/create_product.js",
+        "organization":"npx wdio run ./wdio.conf.js --spec test/specs/create_Organization.js",
+        "compaign":"npx wdio run ./wdio.conf.js --spec  test/specs/create_compaign.js",
+        "campaignwithproduct":"npx wdio run ./wdio.conf.js --spec test/specs/create_compaing_with_product.js"
     },
     "dependencies": {
+        "allure-commandline": "^2.17.2",
         "chai": "^4.3.6",
         "wdio-video-reporter": "^3.2.1"
     }

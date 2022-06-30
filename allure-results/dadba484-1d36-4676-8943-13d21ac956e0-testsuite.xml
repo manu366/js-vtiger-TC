@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1656566179219' stop='1656566202294'>
+    <name>document</name>
+    <title>document</title>
+    <test-cases>
+        <test-case start='1656566179220' status='broken' stop='1656566202280'>
+            <name>create document</name>
+            <title>create document</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-4'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.66'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>ENOENT: no such file or directory, open 'C:\Users\HARISH\Downloads\manohara.resume1 (1)'</message>
+                <stack-trace>Error: ENOENT: no such file or directory, open 'C:\Users\HARISH\Downloads\manohara.resume1 (1)'</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

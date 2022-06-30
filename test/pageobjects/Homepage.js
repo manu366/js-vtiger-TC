@@ -16,6 +16,7 @@ class Homepage extends Page {
     }
 
     async signout(){
+        await (await this.administretor).waitForEnabled()
         await this.administretor.moveTo()
         await this.signoutlink.click()
     }
@@ -23,6 +24,7 @@ class Homepage extends Page {
         return $("//a[.='More']")
     }
     async moreLink(){
+        await (await this.more).waitForDisplayed()
         await this.more.moveTo()
     }
     get campaign(){

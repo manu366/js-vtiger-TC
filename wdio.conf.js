@@ -21,16 +21,15 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        // './test/specs/**/*.js',
+        './test/specs/**/*.js',
         // 'test/specs/create_compaign.js',
         // 'test/specs/create_compaing_with_product.js',
         // 'test/specs/create_contact_With_Organization.js',
         // 'test/specs/create_contactTest.js',
         // 'test/specs/create_document.js',
-        'test/specs/create_lead.js',
+        // 'test/specs/create_lead.js',
         // 'test/specs/create_Organization.js',
         // 'test/specs/create_product.js',
-        // 'test/specs/login_vtiger.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -119,7 +118,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost',
+    baseUrl: 'http://localhost:8888/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -157,8 +156,14 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
-
+    // reporters:["specs"],
+    reporters: [
+    ['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: false,
+    }]],
+    
 
     
     //

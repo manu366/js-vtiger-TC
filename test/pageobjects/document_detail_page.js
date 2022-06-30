@@ -20,7 +20,7 @@ class document_detail_page{
     get save(){
         return $("//input[@title='Save [Alt+S]']")
     }
-    async document_details(documentname,desciption,file){
+    async document_details(documentname,desciption){
     await this.documentname.setValue(documentname)
     await this.documentname.waitForDisplayed()
     await this.fream.waitForDisplayed()
@@ -30,7 +30,6 @@ class document_detail_page{
     await browser.switchToParentFrame()
     await this.bold.click()
     await this.italic.click()
-    await this.filepath.uploadFile(file)
     await this.save.click()
     }
 }module.exports=new document_detail_page()

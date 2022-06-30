@@ -2,7 +2,10 @@ const Homepage = require('../pageobjects/Homepage')
 const loginpage=require('../pageobjects/login.page')
 const leadpage=require('../pageobjects/lead_page')
 const leaddetails=require('../pageobjects/lead_detail_page')
+const fs=require('fs')
+const creadensials=JSON.parse(fs.readFileSync('./test/testdata/organization.json'))
 describe("Lead",async()=>{
+    creadensials.forEach(({organization}) => {
     it("create lead",async()=>{
         await loginpage.open()
         await browser.maximizeWindow()
@@ -12,7 +15,8 @@ describe("Lead",async()=>{
         await expect(browser).toHaveUrlContaining("8888")
         await leadpage.create_leadButton()
         await expect(browser).toHaveUrlContaining("Leads&action")
-        await leaddetails.lead_deatils("reddy","TYSS","Employee","Banking","Team Selling")
+        await leaddetails.lead_deatils("reddy",organization,"Employee","Banking","Team Selling")
         await Homepage.signout()
     })
+})
 })

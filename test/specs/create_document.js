@@ -12,7 +12,7 @@ describe("document",async()=>{
         await expect(browser).toHaveUrlContaining("8888")
         await documentpage.create_documentButton()
         await expect(browser).toHaveUrlContaining("Documents&action")
-        await documentdetails.document_details("resume","my name is manohara","C:/Users/HARISH/Downloads/manohara.resume1 (1)")
+        await documentdetails.document_details("resume","my name is manohara")
         await homepage.signout()
     })
 })

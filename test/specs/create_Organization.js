@@ -1,3 +1,4 @@
+const homepage=require('../pageobjects/Homepage')
 describe("organization",async()=>{
     it("create organization",async()=>{
         await browser.url('http://localhost:8888/')
@@ -26,7 +27,8 @@ describe("organization",async()=>{
     
         const accountname=await browser.$("//input[@name='accountname']")
         await accountname.waitForDisplayed()
-        await accountname.setValue("TYSS"+Math.random)
+        var ran=Math.random()
+        await accountname.setValue("TYSS"+ran)
         const industry=await browser.$("//select[@name='industry']")
         await industry.waitForDisplayed()
         await industry.selectByIndex(2)
@@ -36,14 +38,8 @@ describe("organization",async()=>{
         const saveBTN=await browser.$("//input[@title='Save [Alt+S]']")
         await saveBTN.waitForDisplayed()
         await saveBTN.click()
-        await expect(browser).toHaveUrlContaining("EditView&return_action")
+        await (await browser.$("//td[.='Organization Name']")).waitForDisplayed()
 
-        const administretor=await browser.$("//img[@src='themes/softed/images/user.PNG']")
-        await administretor.waitForDisplayed()
-        await administretor.moveTo()
-        await expect(browser).toHaveUrlContaining("Accounts&")
-        const singout=await browser.$("//a[.='Sign Out']")
-        await singout.waitForDisplayed()
-        await singout.click()
+        await homepage.signout()
     })
 })
