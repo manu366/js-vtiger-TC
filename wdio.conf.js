@@ -1,3 +1,5 @@
+// const loginpage=require("../webdriverio/test/pageobjects/login.page")
+// const homepage=require("../webdriverio/test/pageobjects/Homepage") 
 exports.config = {
     //
     // ====================
@@ -21,7 +23,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/*.js',
+        // './test/specs/**/*.js',
         // 'test/specs/create_compaign.js',
         // 'test/specs/create_compaing_with_product.js',
         // 'test/specs/create_contact_With_Organization.js',
@@ -156,13 +158,13 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    // reporters:["specs"],
-    reporters: [
-    ['allure', {
-        outputDir: 'allure-results',
-        disableWebdriverStepsReporting: true,
-        disableWebdriverScreenshotsReporting: false,
-    }]],
+    reporters:["specs"],
+    // reporters: [
+    // ['allure', {
+        // outputDir: 'allure-results',
+        // disableWebdriverStepsReporting: true,
+        // disableWebdriverScreenshotsReporting: false,
+    // }]],
     
 
     
@@ -171,7 +173,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 60000000000
     },
     //
     // =====
@@ -243,7 +245,8 @@ exports.config = {
     /**
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
-    // beforeTest: function (test, context) {
+    // beforeTest:async function (test, context) {
+        // await loginpage.loginToApp("admin","admin")
     // },
     /**
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
@@ -267,11 +270,13 @@ exports.config = {
      * @param {Boolean} result.passed    true if test has passed, otherwise false
      * @param {Object}  result.retries   informations to spec related retries, e.g. `{ attempts: 0, limit: 0 }`
      */
-    // afterTest: function(test, context, { error, result, duration, passed, retries }) {
+    // afterTest:async function(test, context, { error, result, duration, passed, retries }) {
         // if (error) {
             // await browser.takeScreenshot()
         // }
+        // await homepage.signout()
     // },
+
 
 
     /**

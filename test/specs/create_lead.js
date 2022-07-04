@@ -15,7 +15,7 @@ describe("Lead",async()=>{
         await expect(browser).toHaveUrlContaining("8888")
         await leadpage.create_leadButton()
         await expect(browser).toHaveUrlContaining("Leads&action")
-        await leaddetails.lead_deatils("reddy",organization,"Employee","Banking","Team Selling")
+        await leaddetails.lead_deatils("reddy","organization","Employee","Banking","Team Selling")
         await Homepage.signout()
     })
 })
